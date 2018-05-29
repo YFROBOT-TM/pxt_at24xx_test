@@ -7,14 +7,14 @@
 /**
  * AT24CXX block
  */
-//% weight=100 color=#303030 icon="\uf2db" block="AT24CXX"
+//% weight=100 color=#313233 icon="\uf2db" block="AT24CXX"
 namespace AT24CXX {
     let AT24_I2C_ADDR = 80;
 
     /**
      * 写入一个字节到指定地址
      * @param addr eeprom address, eg: 1
-     * @param dat is the data will be write, eg: 5
+     * @param dat is the data will be write, eg: 2
      */
     //% blockId="AT24_WriteByte" block="eeprom 地址 %addr|写字节 %dat"
     //% weight=100 blockGap=8
@@ -40,7 +40,7 @@ namespace AT24CXX {
     /**
      * 写入字到指定地址
      * @param addr eeprom address, eg: 2
-     * @param dat is the data will be write, eg: 6
+     * @param dat is the data will be write, eg: 3
      */
     //% blockId="AT24_WriteWord" block="eeprom 地址 %addr|写入字 %dat"
     //% weight=90 blockGap=8
@@ -67,7 +67,7 @@ namespace AT24CXX {
     /**
      * 写入双字到指定地址
      * @param addr eeprom address, eg: 4
-     * @param dat is the data will be write, eg: 7
+     * @param dat is the data will be write, eg: 4
      */
     //% blockId="AT24_WriteDWord" block="eeprom 地址 %addr|写入双字 %dat"
     //% weight=80 blockGap=8
