@@ -1,6 +1,6 @@
 /**
  * makecode AT24CXX EEPROM Package.
- * From microbit/micropython ÖĞÎÄÉçÇø.
+ * From microbit/micropython ä¸­æ–‡ç¤¾åŒº.
  * http://www.micropython.org.cn
  */
 
@@ -12,11 +12,11 @@ namespace AT24CXX {
     let AT24_I2C_ADDR = 80;
 
     /**
-     * Ğ´ÈëÒ»¸ö×Ö½Úµ½Ö¸¶¨µØÖ·
+     * å†™å…¥ä¸€ä¸ªå­—èŠ‚åˆ°æŒ‡å®šåœ°å€
      * @param addr eeprom address, eg: 1
      * @param dat is the data will be write, eg: 5
      */
-    //% blockId="AT24_WriteByte" block="eeprom µØÖ· %addr|Ğ´×Ö½Ú %dat"
+    //% blockId="AT24_WriteByte" block="eeprom åœ°å€ %addr|å†™å­—èŠ‚ %dat"
     //% weight=100 blockGap=8
     export function write_byte(addr: number, dat: number): void {
         let buf = pins.createBuffer(3);
@@ -27,10 +27,10 @@ namespace AT24CXX {
     }
 
     /**
-     * ´ÓÖ¸¶¨µØÖ·¶ÁÈ¡×Ö½Ú
+     * ä»æŒ‡å®šåœ°å€è¯»å–å­—èŠ‚
      * @param addr eeprom address, eg: 1
      */
-    //% blockId="AT24_ReadByte" block="¶ÁÈ¡×Ö½Ú×ÔµØÖ· %addr"
+    //% blockId="AT24_ReadByte" block="è¯»å–å­—èŠ‚è‡ªåœ°å€ %addr"
     //% weight=99 blockGap=8
     export function read_byte(addr: number): number {
         pins.i2cWriteNumber(AT24_I2C_ADDR, addr, NumberFormat.UInt16BE);
@@ -38,11 +38,11 @@ namespace AT24CXX {
     }
 
     /**
-     * Ğ´Èë×Öµ½Ö¸¶¨µØÖ·
+     * å†™å…¥å­—åˆ°æŒ‡å®šåœ°å€
      * @param addr eeprom address, eg: 2
      * @param dat is the data will be write, eg: 6
      */
-    //% blockId="AT24_WriteWord" block="eeprom µØÖ· %addr|Ğ´Èë×Ö %dat"
+    //% blockId="AT24_WriteWord" block="eeprom åœ°å€ %addr|å†™å…¥å­— %dat"
     //% weight=90 blockGap=8
     export function write_word(addr: number, dat: number): void {
         let buf = pins.createBuffer(4);
@@ -54,10 +54,10 @@ namespace AT24CXX {
     }
 
     /**
-     * ´ÓÖ¸¶¨µØÖ·¶ÁÈ¡×Ö
+     * ä»æŒ‡å®šåœ°å€è¯»å–å­—
      * @param addr eeprom address, eg: 2
      */
-    //% blockId="AT24_ReadWord" block="¶ÁÈ¡×Ö´ÓµØÖ· %addr"
+    //% blockId="AT24_ReadWord" block="è¯»å–å­—ä»åœ°å€ %addr"
     //% weight=89 blockGap=8
     export function read_word(addr: number): number {
         pins.i2cWriteNumber(AT24_I2C_ADDR, addr, NumberFormat.UInt16BE);
@@ -65,11 +65,11 @@ namespace AT24CXX {
     }
 
     /**
-     * Ğ´ÈëË«×Öµ½Ö¸¶¨µØÖ·
+     * å†™å…¥åŒå­—åˆ°æŒ‡å®šåœ°å€
      * @param addr eeprom address, eg: 4
      * @param dat is the data will be write, eg: 7
      */
-    //% blockId="AT24_WriteDWord" block="eeprom µØÖ· %addr|Ğ´ÈëË«×Ö %dat"
+    //% blockId="AT24_WriteDWord" block="eeprom åœ°å€ %addr|å†™å…¥åŒå­— %dat"
     //% weight=80 blockGap=8
     export function write_dword(addr: number, dat: number): void {
         let buf = pins.createBuffer(6);
@@ -83,10 +83,10 @@ namespace AT24CXX {
     }
 
     /**
-     * ´ÓÖ¸¶¨µØÖ·¶ÁÈ¡Ë«×Ö
+     * ä»æŒ‡å®šåœ°å€è¯»å–åŒå­—
      * @param addr eeprom address, eg: 4
      */
-    //% blockId="AT24_ReadDWord" block="¶ÁÈ¡Ë«×Ö´ÓµØÖ· %addr"
+    //% blockId="AT24_ReadDWord" block="è¯»å–åŒå­—ä»åœ°å€ %addr"
     //% weight=79 blockGap=8
     export function read_dword(addr: number): number {
         pins.i2cWriteNumber(AT24_I2C_ADDR, addr, NumberFormat.UInt16BE);
