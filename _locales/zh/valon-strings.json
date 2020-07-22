@@ -1,0 +1,10 @@
+{
+    "AT24CXX.write_byte": "写入一个字节到指定地址",
+    "AT24CXX.write_byte|param|addr": "地址",
+    "AT24CXX.write_byte|param|dat": "数据",
+    
+    "ValonLED.LEDLeft|block": "左侧",
+    "ValonLED.LEDRight|block": "右侧",
+    "ValonLEDswitch.TurnOn|block": "开",
+    "ValonLEDswitch.TurnOff|block": "关"    
+}

@@ -1,6 +1,6 @@
 {
-    "name": "AT24CXX",
-    "version": "1.0.0",
+    "name": "Valon",
+    "version": "0.0.1",
     "description": "makecode AT24CXX eeprom 的 micro:bit 软件包, 来自 microbit/micropython 中文社区",
     "license": "MIT",
     "dependencies": {
@@ -8,6 +8,7 @@
     },
     "files": [
         "README.md",
+        "_locales/zh/valon-string.json",
         "main.ts"
     ],
     "testFiles": [

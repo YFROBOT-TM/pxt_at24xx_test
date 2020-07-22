@@ -12,7 +12,7 @@ namespace AT24CXX {
     let AT24_I2C_ADDR = 80;
 
     /**
-     * 写入一个字节到指定地址
+     * Write a byte to the specified address
      * @param addr eeprom address, eg: 1
      * @param dat is the data will be write, eg: 2
      */
