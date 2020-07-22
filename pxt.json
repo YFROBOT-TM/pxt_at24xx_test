@@ -1,5 +1,5 @@
 {
-    "name": "Valon",
+    "name": "AT24CXX",
     "version": "0.0.1",
     "description": "makecode AT24CXX eeprom 的 micro:bit 软件包, 来自 microbit/micropython 中文社区",
     "license": "MIT",
